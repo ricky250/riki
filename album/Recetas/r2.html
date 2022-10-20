@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Recetario Akuma</title>
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/2f43f811d4.js" crossorigin="anonymous"></script>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/r.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+    <script>
+        let num = 4;
+        // multiplo para poder multiplicar las variables de comida existentes
+        let multiplo = 1;
+        //se crean las personas 
+        let personas = 4;
+        // se crean las variables de las cantidades
+        let cebolla = .75;
+        let ajo = 1;
+        let chiles = 2;
+        let knorr = 2;
+        let aceite = 1;
+        let comino = 1;
+        let clavos = 3;
+        let oregano = 2;
+        let laurel = 2;
+        let chile = 50;
+        let ajonjoli = 1;
+        let ajo2 = 3;
+        let pimienta = 8;
+        let clavo2 = 4;
+        let vinagre = 4;
+        let knorr2 = 1;
+        let cebolla2 = .5;
+        let cebollaMorada = .5;
+        let vinagre2 = 1;
+        let agua = 3;
+        let knorr3 = .5;
+        let oregano2 = 1;
+        let frijoles = 1;
+        let bolillos = 4;
+        let carnitas = 1;
+        let rabanos = 2;
+    </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="../index.html">Recetario Akuma</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-dark py-7">
+        <div class="container px-7">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-white mb-1">Torta ahogada</h1>
+                        <p style="padding-top: 3%;" class="lead fw-normal text-white-50 mb-4">
+                            Dentro del universo tortero, destaca la originaria de Jalisco torta ahogada. Se caracteriza
+                            por ir bañada en una rica salsa, flanqueada por un birote (pan) y rellena de carnitas de
+                            cerdo. ¡Deliciosa!
+                        </p>
+
+                        <p class="lead fw-normal text-white-50 mb-4">¿Sabías qué?
+                            Hay muchas historias respecto al creador de la torta ahogada, pero una de las más populares
+                            dice que surgió cuando un vendedor de un local de lonches tiró accidentalmente un birote en
+                            la olla con salsa y ¡oh, no!; pero el comensal pidió que se la sirvieran así y le encantó.
+                            Así surgió la receta que ahora conocemos
+                        </p>
+
+
+                    </div>
+
+                    <!--icons-->
+                    <div style=" color: #4577C1; padding-bottom: 3%;">
+                        <div class="row align-items-start">
+                            <div class="col-md-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                &nbsp;
+                                <span id="per"></span>
+                                personas
+                            </div>
+                            <div class="col-md-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-clock-history" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                                    <path
+                                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                                &nbsp; 27 min
+                            </div>
+                            <div class="col-md-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-fire" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                                </svg>
+                                &nbsp;
+                                dificultad facil
+                            </div>
+                            <div class="col-md-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-coin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                        d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                                </svg>
+                                &nbsp;
+                                medio
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
+                        height="600" width="400" src="../../assets/img/img2.jpg" alt="..." /></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Tiempos de section-->
+    <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="fw-bolder mb-0">Recetario Akuma.</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row gx-5 row-cols-1 row-cols-md-1">
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
+                            </div>
+                            <p class="mb-0">
+                            <h2 class="h5">Tips</h2> Lo ideal para hacer tortas ahogadas es utilizar birote, una especie
+                            de bolillo de corteza gruesa que se hace en Jalisco. No es fácil encontrarlo fuera de ese
+                            estado, así que si no lo encuentras, puedes utilizar baguette o una telera de tabla o algún
+                            tipo de pan con poco migajón y una corteza gruesa (esto es importante para que aguante la
+                            salsa y no se aguade demasiado).</p>
+                        </div>
+
+
+                        <div class="col mb-5 mb-md-0 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                            </div>
+                            <h2 class="h5">Numero de Personas</h2>
+                            <input class="form-control" id="inPersonas" type="number" placeholder="4">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var inputPer = document.getElementById('inPersonas');
+            inputPer.addEventListener('keyup', (event) => {
+                //console.log(event);
+                var inputPersonas = event.path[0].value;
+                personas = inputPersonas;
+                if (inputPersonas <= 0) {
+                    personas = num;
+                }
+                //event.path[0].placeholder;
+
+
+                if (personas != num) {
+            multiplo = personas / num;
+
+        } else {
+            multiplo = 1;
+
+        }
+
+        document.getElementById('cebolla').innerHTML =  (cebolla * multiplo);
+        document.getElementById('ajo').innerHTML = (ajo * multiplo);
+        document.getElementById('chiles').innerHTML = (chiles * multiplo);
+        document.getElementById('knorr').innerHTML = (knorr * multiplo);
+        document.getElementById('aceite').innerHTML = (aceite * multiplo);
+        document.getElementById('comino').innerHTML = (comino * multiplo);
+        document.getElementById('clavos').innerHTML = (clavos * multiplo);
+        document.getElementById('oregano').innerHTML = (oregano * multiplo);
+        document.getElementById('flaurelri').innerHTML = (laurel * multiplo);
+        document.getElementById('chile').innerHTML = (chile * multiplo);
+        document.getElementById('ajonjoli').innerHTML = (ajonjoli * multiplo);
+        document.getElementById('ajo2').innerHTML = (ajo2 * multiplo);
+        document.getElementById('pimienta').innerHTML = (pimienta * multiplo);
+        document.getElementById('clavo2').innerHTML = (clavo2 * multiplo);
+        document.getElementById('vinagre').innerHTML = (vinagre * multiplo);
+        document.getElementById('knorr2').innerHTML = (knorr2 * multiplo);
+        document.getElementById('cebolla2').innerHTML = (cebolla2 * multiplo);
+        document.getElementById('cebollaMorada').innerHTML = (cebollaMorada * multiplo);
+        document.getElementById('vinagre2').innerHTML = (vinagre2 * multiplo);
+        document.getElementById('agua').innerHTML = (agua * multiplo);
+        document.getElementById('knorr3').innerHTML = (knorr3 * multiplo);
+        document.getElementById('oregano2').innerHTML = (oregano2 * multiplo);
+        document.getElementById('frijoles').innerHTML = (frijoles * multiplo);
+        document.getElementById('bolillos').innerHTML = (bolillos * multiplo);
+        document.getElementById('carnitas').innerHTML = (carnitas * multiplo);
+        qrabadocument.getElementById('rabanos').innerHTMLnos = (rabanos * multiplo);
+        document.getElementById('per').innerHTML = personas;
+
+            }
+            );
+        </script>
+    </section>
+    <!-- Testimonial section-->
+
+
+    <!-- prueba-->
+    
+
+    <div style="text-align:center" class="con">
+
+        <div class="col-lg-4 mb-5 mb-lg-0"
+            style=" width:33%; background-color: #D5D8DC ;  display: inline-block; box-sizing: border-box;">
+            <h3 style="padding-bottom: 7%;">Ingredientes</h3>
+
+            <div style="text-align:left; margin-left: 12%;">
+                <h4 style="color: #4577C1;">
+                    Para la salsa de jitomate:
+                </h4>
+                <p>
+                    <span id="cebolla"></span>
+                    </script> de cebolla.
+                </p>
+                <p>
+                    <span id="ajo"></span> diente de ajo.
+                </p>
+                <p>
+                    <span id="chiles"></span> chiles de ábrol.
+                </p>
+                <p>
+                    <span id="knorr"></span> litros de Knorr 100% Natural Caldillo De Tomate.
+                </p>
+                <p>
+                    <span id="aceite"></span> cucharada de aceite.
+                </p>
+
+                <p>
+                    <span id="comino"></span> cucharadita de comino molido.
+                </p>
+                <p>
+                    <span id="clavos"></span> piezas de clavo entero.
+                </p>
+                <p>
+                    <span id="oregano"></span> cucharaditas de orégano seco.
+                </p>
+                <p>
+                   <span id="laurel"></span>
+                    hojas de laurel.
+                </p>
+                <h4 style="color: #4577C1;">
+                    Para la salsa picante:
+                </h4>
+                <p>
+                  <span id="chile"></span> gramos de chile de ábrol.
+                </p>
+                <p>
+                    <span id="ajonjoli"></span> cucharadita de ajonjolí natural tostado.
+                </p>
+                <p>
+                    <span id="ajo2"></span> diente de ajo.
+                </p>
+                <p>
+                    <span id="pimienta"></span> piezas de pimienta negra en grano.
+                </p>
+                <p>
+                  <span id="clavo2"></span> piezas de clavo entero.
+                </p>
+                <p>
+                    <span id="vinagre"></span> cucharadas de vinagre blanco.
+                </p>
+                <p>
+                    <span id="knorr2"></span> cucharada de Knorr Sazonador Tomate En Polvo
+                </p>
+
+                <h4 style="color: #4577C1;">
+                    Para las cebollas encurtidas:
+                </h4>
+                <p>
+                    <span id="cebolla2"></span> cebolla blanca.
+                </p>
+                <p>
+                   <span id="cebollaMorada"></span> cebolla morada.
+                </p>
+                <p>
+                    <span id="vinagre2"></span> cucharada de vinagre blanco.
+                </p>
+
+                <p>
+                    <span id="agua"></span> cucharadas de agua.
+                </p>
+                <p>
+                    <span id="knorr3"></span> cucharadita de Knorr En Polvo Caldo De Vegetales 100 %
+                    Natural.
+                </p>
+                <p>
+                    <span id="oregano2"></span><script>document.write(oregano2); </script> cucharada de orégano seco.
+                </p>
+
+                <h4 style="color: #4577C1;">
+                    Para las tortas ahogadas:
+                </h4>
+                <p>
+                    <span id="frijoles"></span> taza de frijoles refritos en lata.
+                </p>
+                <p>
+                 <span id="bolillos"></span> birotes o bolillos.
+                </p>
+                <p>
+                    <span is="carnitas"></span> kilogramo de carnitas de cerdo.
+                </p>
+
+                <p>
+                    <span id="rabanos"></span> rábanos en rebanadas.
+                </p>
+
+            </div>
+        </div>
+        <div style="width: 2%; "></div>
+        <div class="col-lg-4 mb-5 mb-lg-0"
+            style=" width: 57%; background-color: #4577C1; padding-top: 2.3%;   display: inline-block; box-sizing: border-box;">
+            <div style="color: white; text-align: justify;  margin-left: 10%; margin-right: 10%;" class="pre"
+                data-componentname="recipeCookingMethod" data-componentview="recipeCookingMethod">
+                <h2
+                    class="RecipeCookingMethod-module--recipe-cooking-method__title--1oUi5 recipe-cooking-method__title">
+                    Método de preparación</h2>
+                <div class="RecipeCookingMethod-module--cooking-methods--ZwqZ_ cooking-methods">
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la salsa de jitomate:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Asa
+                            la cebolla, el ajo y el chile de árbol. Luego, licúa esto con el Caldillo De Tomate Rojo
+                            Knorr®.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Calienta
+                            una olla con un poquito de aceite. Cuando esté caliente, vierte la mezcla anterior y
+                            condimenta con comino, clavo, orégano y laurel. Deja que hierva durante 10 minutos
+                            aproximadamente a fuego bajo. No debe quedar muy caldosa sino levemente espesa. Cuando esté
+                            lista, apártala pero procura que se mantega caliente.
+                        </dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para la salsa picante:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Coloca
+                            3 tazas de agua a hervir. Luego agrega los chiles y hiérvelos durante 5 minutos. Apágale al
+                            fuego pasado el tiempo y deja que los chiles reposen en el agua unos 10 minutos.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Licúa
+                            los chiles hervidos junto el ajonjolí tostado, el ajo, las pimientas, los clavos, el vinagre
+                            y medio cubito de Knorr® Tomate. Puedes agregar un poco de agua donde se remojaron los
+                            chiles para facilitar el licuado.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Cuela
+                            la salsa licuada y ¡listo!
+                        </dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para las cebollitas encurtidas</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Filetea
+                            las cebollas (que no quede tan fina) y luego mézclalas con el vinagre, el agua, el Caldo De
+                            Vegetales Knorr® 100% Natural En Polvo y el orégano.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Déjalas
+                            reposar durante al menos media hora. Puedes prepararlas antes y mantenerlas en el
+                            refrigerador. Si las dejas toda la noche, quedarán mejor.
+                        </dd>
+                    </dl>
+                    <dl class="RecipeCookingMethod-module--cooking-methods__group--weVnm cooking-methods__group">
+                        <dt
+                            class="RecipeCookingMethod-module--cooking-methods__group-title--1eiwU cooking-methods__group-title">
+                            Para las tortas ahogadas:</dt>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="1º passo" aria-label="1º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">1</span>Corta
+                            el pan por la mitad, quítale el migajón y añade los frijoles refritos en ambos lados, a tu
+                            gusto.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="2º passo" aria-label="2º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">2</span>Luego,
+                            rellena de manera generosa con las carnitas.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="3º passo" aria-label="3º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">3</span>Coloca
+                            la torta en un plato hondo y cubre con la salsa. Deja reposar unos minutos para que penetre
+                            el sabor.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="4º passo" aria-label="4º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">4</span>Después,
+                            adorna con las cebollas encurtidas y rabanitos. Sirve junto a la salsa picante para que cada
+                            comensal le ponga la cantidad de salsa que quiera.
+                        </dd>
+                        <dd
+                            class="RecipeCookingMethod-module--cooking-methods__group-item--Tz89s cooking-methods__group-item">
+                            <span alt="5º passo" aria-label="5º passo"
+                                class="RecipeCookingMethod-module--cooking-methods__group-item-counter--3-ubf cooking-methods__group-item-counter">5</span>¡Listo!
+                            Disfruta muchísimo tu torta ahogada.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <br />
+    <!--se acaba la prueba -->
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <center>
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; Akuma.</div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </footer>
+
+</body>
+
+</html>
